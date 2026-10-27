@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Ali Haad 🎂</title>
+<meta name="theme-color" content="#ec4899">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 1. COVER -->
+<section class="scene cover" id="top">
+  <div class="polaroid"><img src="ali.jpg" alt="Ali Haad"><span>Ali Haad</span></div>
+  <div class="cake" aria-hidden="true">
+    <i class="t t3"></i><i class="t t2"></i><i class="t t1"></i>
+  </div>
+  <h1>Happy birthday, Ali Haad!</h1>
+  <p>Hussna threw a little party just for you.</p>
+  <a class="btn" href="#candles">Start the party</a>
+</section>
+
+<!-- 2. CANDLES -->
+<section class="scene" id="candles">
+  <h2>Make a wish</h2>
+  <p>Hold the button to blow, or use your microphone.</p>
+  <div class="cake small" aria-hidden="true">
+    <div class="candles"><b class="c"><u></u></b><b class="c"><u></u></b><b class="c"><u></u></b><b class="c"><u></u></b><b class="c"><u></u></b></div>
+    <i class="t t3"></i><i class="t t2"></i><i class="t t1"></i>
+  </div>
+  <div class="row">
+    <button class="btn" id="blow" type="button">Hold to blow 💨</button>
+    <button class="btn ghost" id="mic" type="button">Use microphone 🎤</button>
+  </div>
+  <p id="candleMsg" class="note" aria-live="polite">Nothing is recorded. The mic only listens for your breath.</p>
+</section>
+
+<!-- 3. LETTER -->
+<section class="scene" id="letter">
+  <h2>A letter for you</h2>
+  <button class="envelope" id="env" type="button" aria-label="Open the envelope">
+    <span class="flap"></span><span class="seal">💌</span><span class="tap">Tap to open</span>
+  </button>
+  <article class="paper" id="paper" hidden>
+    <h3>Salgrah Mubarak, Ali! 🎉</h3>
+    <p>Happy Birthday to the most amazing person in my life.</p>
+    <p>Another year of you being the person I can tell anything to. Thank you for every fazool baat you listened to and every nakhra you handled.</p>
+    <p>Wese aik saal aur boorhay ho gaye ho tum, par chalo khair hai. Dua hai ke is saal thori si aqal aur matureness bhi aa jaye. 😜</p>
+    <p class="sign">With love, Hussna Faisal</p>
+  </article>
+</section>
+
+<!-- 4. WHAT I LOVE -->
+<section class="scene" id="love">
+  <h2>What I love about you</h2>
+  <p>Tap a capsule to open it.</p>
+  <div class="caps" id="caps">
+    <button class="cap" type="button" data-t="You make me laugh even on my worst day. 😂">🟣</button>
+    <button class="cap" type="button" data-t="I can be my crazy, unfiltered self around you. 🌈">🟡</button>
+    <button class="cap" type="button" data-t="You listen to my endless rants and always know what to say. 🎧">🔴</button>
+    <button class="cap" type="button" data-t="You are genuine, dependable, and always have my back. 🛡️">🟢</button>
+  </div>
+  <p class="reveal" id="capText" aria-live="polite"></p>
+</section>
+
+<!-- 5. WISH JAR -->
+<section class="scene" id="wishes">
+  <h2>The wish jar</h2>
+  <p>Pull a star. Each one is a wish for you.</p>
+  <button class="jar" id="jar" type="button" aria-label="Pull a wish from the jar">
+    <span class="lid"></span><span class="glass"><em>⭐</em><em>✨</em><em>⭐</em><em>🌟</em><em>✨</em></span>
+  </button>
+  <div class="strip" id="strip" aria-live="polite">Tap the jar</div>
+  <small id="count"></small>
+</section>
+
+<!-- 6. OUR STORY -->
+<section class="scene" id="story">
+  <h2>Our story</h2>
+  <ol class="time">
+    <li>We started as normal acquaintances. I never thought we would get this close.</li>
+    <li>Then came talking every single day, late-night chats and secrets only we know.</li>
+    <li>Through good days and chaotic ones, every step made us stronger.</li>
+    <li>Now I can’t imagine my life without my best friend. 💖</li>
+  </ol>
+</section>
+
+<!-- 7. FINALE -->
+<section class="scene finale" id="end">
+  <div class="balloons" aria-hidden="true"><b>A</b><b>L</b><b>I</b></div>
+  <h2>May Allah bless you with health, joy and success. 🤲</h2>
+  <p>Stay blessed, hamesha hanste muskurate raho.</p>
+  <button class="btn" id="treat" type="button">Treat kab de rahe ho? 🍉</button>
+  <p id="treatMsg" class="reveal" aria-live="polite"></p>
+  <p class="sign">With love, your best friend Hussna Faisal</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
